@@ -147,16 +147,16 @@ header {
 
     /* Personaliza el scrollbar en navegadores basados en WebKit */
     .texto-mostrado::-webkit-scrollbar {
-      width: 12px; /* Ancho del scrollbar */
+      width: 12px; 
     }
 
     .texto-mostrado::-webkit-scrollbar-thumb {
-      background-color: #888; /* Color del scrollbar thumb */
-      border-radius: 6px; /* Bordes redondeados del scrollbar thumb */
+      background-color: #888; 
+      border-radius: 6px; 
     }
 
     .texto-mostrado::-webkit-scrollbar-track {
-      background-color: #f1f1f1; /* Color de fondo del scrollbar track */
+      background-color: #f1f1f1; 
     }
 
 
@@ -286,6 +286,10 @@ footer {
     font-size: 17px;
 
   }
+  #notification-container {
+    top: 10px;
+    right: 10px;
+  }
 
   .mensaje-titulo,
 .mensaje-subtitulo{
@@ -341,7 +345,11 @@ footer {
     border-radius: 15px;
     transition: 400ms;
   }
-
+  #notification-container {
+    top: 10px;
+    right: 5px;
+    max-width: 100%;
+  }
   .mostrando-texto {
     height: auto;
     width: 275px;
@@ -391,7 +399,11 @@ footer {
     left: -40px;
     width: 250px;
   }
-
+  #notification-container {
+    top: 5px;
+    right: 5px;
+    max-width: 100%;
+  }
   .btn3{
     left:55px;
   }
@@ -443,7 +455,15 @@ footer {
     top: 0;
     left: -40px;
   }
+  #notification-container {
+    top: 5px;
+    right: 2px;
+    max-width: 100%;
+  }
 
+  .notification {
+    padding: 8px;
+  }
   .btn3{
     left: 5px;
   }
