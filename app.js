@@ -10,7 +10,7 @@ function Validaciones() {
   let nuevoTxt = document.querySelector(".texto-mostrado");
 
   if (txtArea.trim() === "") {
-    alert("Por favor, ingresa texto antes de encriptar.");
+    mostrarNotificacion("Por favor, ingresa texto antes de encriptar.", "error");
   } else {
     Ocultar();
     Mostrar();
@@ -18,6 +18,24 @@ function Validaciones() {
     nuevoTxt.innerHTML = txtArea;
   }
 }
+
+function mostrarNotificacion(mensaje, tipo) {
+  const notificationContainer = document.getElementById("notification-container");
+
+  const notification = document.createElement("div");
+  notification.className = `notification ${tipo}`;
+  notification.textContent = mensaje;
+
+  notificationContainer.appendChild(notification);
+
+  setTimeout(() => {
+    notification.classList.add("hide");
+    setTimeout(() => {
+      notification.remove();
+    }, 500);
+  }, 3000);
+}
+
 
 function DisplayEstilos(clase, estilo) {
   document.querySelector(clase).style.display = estilo;
