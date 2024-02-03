@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Poppins:ital@1&family=Sono:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1 class="titulo">Encriptador y Desencriptador</h1>
+            <h2 class="sub-titulo">Alura Challenges</h2>
+        </nav>
+    </header>
+
+    <main>
+
+        <img src="Img/a.png" class="letra-A" />
+
+        <article class="recuadro">
+            <section class="encriptador">
+                <textarea class="input-encriptar" cols="30" rows="15" placeholder="Ingrese el texto aqui"></textarea>
+                
+                <input onclick="Encriptar();" class="btn1" type="submit" value="Encriptar">
+                <input class="btn2" type="submit" value="Desencriptar">
+            </section>
+
+            <section class="mensajes">
+                <div class="mostrando-texto">
+                    <p class="texto-mostrado">
+
+                    </p>
+                    
+                    <img src="Img/Muñeco.png" class="imagen" alt="muñeco">
+                    
+                    
+                    <p class="mensaje-titulo">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje-subtitulo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <input class="btn3" type="submit" value="Copiar">
+                </div>
+            </section>
+
+        </article>
+
+        <footer>
+            Hecho por: Rodrigo Oliverio Fernandez Zavaleta
+        </footer>
+
+    </main>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

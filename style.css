@@ -1,0 +1,442 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f5fc;
+}
+
+header {
+  width: auto;
+  padding: 20px;
+  background-color: #609ed4;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*Titulos*/
+.titulo,
+.sub-titulo {
+  transition: 400ms;
+}
+.titulo:hover,
+.sub-titulo:hover {
+  transform: scale(1.1);
+}
+
+.letra-A {
+  padding: 14px 24px;
+  margin: 16px;
+  display: block;
+}
+
+/*para tener tanto el textarea y donde se mostrara*/
+.recuadro {
+  display: flex;
+}
+
+.encriptador {
+  margin: 14px 35px;
+  padding: 24px;
+  display: inline-block;
+  width: 50%;
+}
+
+/*Inputs y botones*/
+
+.input-encriptar {
+  display: block;
+  margin: 0 auto;
+  margin-left: 35px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+  color: #0a3871;
+  border: none;
+  font-size: 25px;
+}
+  /* Personaliza el scrollbar en navegadores basados en WebKit */
+  .input-encriptar::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+  }
+
+  .input-encriptar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del scrollbar thumb */
+    border-radius: 6px; /* Bordes redondeados del scrollbar thumb */
+  }
+
+  .input-encriptar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo del scrollbar track */
+  }
+
+
+.input-encriptar::placeholder {
+  color: #0a3871;
+}
+
+.btn1 {
+  background-color: #0a3871;
+  color: white;
+  border-radius: 10px;
+  border-color: #0a3871;
+  transition: 400ms;
+}
+.btn2 {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border-radius: 10px;
+  border-color: #0a3871;
+  transition: 400ms;
+}
+
+.btn1,
+.btn2 {
+  margin-top: 25px;
+  margin-left: 40px;
+  height: 45px;
+  width: 300px;
+}
+
+.btn1:hover {
+  background-color: #2973cd;
+  color: white;
+  border-radius: 10px;
+  border-color: #0a3871;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: #989595;
+  color: #ffffff;
+  border-radius: 10px;
+  border-color: #0d3b72;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.warning {
+  color: #0a3871;
+}
+
+/*Division de la segunda parte*/
+
+.mensajes {
+  width: 50%;
+  display: inline-block;
+}
+
+.mostrando-texto {
+  background-color: #ffffff;
+  height: 650px;
+  margin: 0 auto;
+  width: 60%;
+  box-shadow: 20px 20px 20px #0000001a;
+  border-radius: 15px;
+}
+
+.texto-mostrado{
+  max-height: 80%;
+  border-radius: 15px;
+  display: none;
+  font-size: 20px;
+  overflow-y: auto;
+
+  padding: 25px;
+  text-align: justify;
+  color: #0a3871;
+}
+
+    /* Personaliza el scrollbar en navegadores basados en WebKit */
+    .texto-mostrado::-webkit-scrollbar {
+      width: 12px; /* Ancho del scrollbar */
+    }
+
+    .texto-mostrado::-webkit-scrollbar-thumb {
+      background-color: #888; /* Color del scrollbar thumb */
+      border-radius: 6px; /* Bordes redondeados del scrollbar thumb */
+    }
+
+    .texto-mostrado::-webkit-scrollbar-track {
+      background-color: #f1f1f1; /* Color de fondo del scrollbar track */
+    }
+
+
+.imagen {
+  display: flex;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.mensaje-titulo {
+  color: #0a3871;
+  font-size: 24px;
+}
+
+.mensaje-titulo,
+.mensaje-subtitulo {
+  position: relative;
+  bottom: -10px;
+  text-align: center;
+  padding: 45px;
+}
+
+.btn3 {
+  position: absolute;
+  top: 860px;
+  left: 995px;
+  font-size: 20px;
+  height: 50px;
+  width: 350px;
+  color: #072b61;
+  background-color: #ffffff;
+  border: 2px solid #072b61;
+  border-radius: 15px;
+  transition: 400ms;
+  display: none;
+}
+
+.btn3:hover {
+  background-color: #c7bdf9;
+  transform: scale(1.1);
+}
+
+/*Footer*/
+
+footer {
+  background-color: #aab2d5;
+  text-align: center;
+  padding: 30px;
+  width: auto;
+  margin-top: 80px;
+}
+
+/*Responsive para tablet 1024px*/
+@media screen and (max-width: 1025px){
+    .imagen{
+        width: 200px;
+        margin-left: 0px;
+    }
+}
+
+/*Responsive para tablet 769px*/
+
+@media screen and (max-width: 769px) {
+  .recuadro {
+    flex-direction: column;
+  }
+  header,
+  nav {
+    width: auto;
+  }
+  .encriptador {
+    width: auto;
+  }
+  .input-encriptar{
+    margin: 0;
+  }
+  .btn1 {
+    position: relative;
+    top: 20px;
+    left: -40px;
+  }
+  .btn2 {
+    position: relative;
+    top: -50px;
+    left: 300px;
+  }
+  .mostrando-texto {
+    height: auto;
+    width: 700px;
+
+    margin-top: -10px;
+    margin-left: 35px;
+  }
+  .texto-mostrado{
+    padding: 15px;
+  }
+  .btn3 {
+    position: relative;
+    left: 200px;
+    height: 40px;
+    width: 300px;
+    top: -10px;
+    font-size: 17px;
+
+  }
+
+  .mensaje-titulo,
+.mensaje-subtitulo{
+  top: 0;
+  padding: 15px;
+}
+  .imagen {
+    display: none;
+  }
+}
+/*Responsive para celular de 426px*/
+@media screen and (max-width: 426px) {
+  header,
+  nav {
+    width: auto;
+  }
+  .imagen {
+    display: none;
+  }
+  .recuadro {
+    flex-direction: column;
+  }
+  .encriptador {
+    width: auto;
+  }
+  .input-encriptar {
+    margin-left: 0;
+  }
+
+  .btn1 {
+    position: relative;
+    width: 300px;
+    top: 0;
+    left: -40px;
+  }
+  .btn2 {
+    position: relative;
+    top: 0;
+    left: -40px;
+    width: 300px;
+  }
+
+  .btn3 {
+    position: relative;
+    top: 0;
+    left: 55px;
+    font-size: 20px;
+    height: 40px;
+    width: 170px;
+    color: #072b61;
+    background-color: #ffffff;
+    border: 2px solid #072b61;
+    border-radius: 15px;
+    transition: 400ms;
+  }
+
+  .mostrando-texto {
+    height: auto;
+    width: 300px;
+    margin-left: 50px;
+    padding: 15px;
+    text-align: center;
+  }
+  .mensaje-titulo,
+  .mensaje-subtitulo {
+    position: relative;
+    top: 0;
+  }
+  footer {
+    width: auto;
+  }
+}
+
+/*Responsive para celular de 376px*/
+@media screen and (max-width: 376px) {
+  header,
+  nav {
+    width: auto;
+  }
+  .imagen {
+    display: none;
+  }
+  .recuadro {
+    flex-direction: column;
+  }
+  .encriptador {
+    width: auto;
+  }
+  .input-encriptar {
+    margin-left: 0;
+    font-size: 23px;
+  }
+
+  .btn1 {
+    position: relative;
+    width: 250px;
+    top: 0;
+    left: -40px;
+  }
+  .btn2 {
+    position: relative;
+    top: 0;
+    left: -40px;
+    width: 250px;
+  }
+
+  .btn3{
+    left:55px;
+  }
+  .mostrando-texto {
+    height: auto;
+    width: 300px;
+    margin-left: 25px;
+    padding: 15px;
+    text-align: center;
+  }
+  .mensaje-titulo,
+  .mensaje-subtitulo {
+    position: relative;
+    top: 10px;
+  }
+  footer {
+    width: auto;
+  }
+}
+
+/*Responsive para celular de 321px*/
+@media screen and (max-width: 321px) {
+  header,
+  nav {
+    width: auto;
+  }
+  .imagen {
+    display: none;
+  }
+  .recuadro {
+    flex-direction: column;
+  }
+  .encriptador {
+    width: auto;
+  }
+  .input-encriptar {
+    margin-left: 0;
+  }
+
+  .btn1 {
+    position: relative;
+    width: 200px;
+    top: 0;
+    left: -40px;
+  }
+  .btn2 {
+    position: relative;
+    width: 200px;
+    top: 0;
+    left: -40px;
+  }
+
+  .btn3{
+    left: 5px;
+  }
+  .mostrando-texto {
+    height: auto;
+    width: 200px;
+    margin-left: 50px;
+    padding: 15px;
+    text-align: center;
+  }
+  .mensaje-titulo,
+  .mensaje-subtitulo {
+    position: relative;
+    top: 10px;
+  }
+  footer {
+    width: auto;
+  }
+}
+
