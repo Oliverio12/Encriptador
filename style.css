@@ -293,7 +293,7 @@ footer {
 
   .btn1 {
     position: relative;
-    width: 300px;
+    width: 280px;
     top: 0;
     left: -40px;
   }
@@ -301,7 +301,7 @@ footer {
     position: relative;
     top: 0;
     left: -40px;
-    width: 300px;
+    width: 280px;
   }
 
   .btn3 {
@@ -320,7 +320,7 @@ footer {
 
   .mostrando-texto {
     height: auto;
-    width: 300px;
+    width: 275px;
     margin-left: 50px;
     padding: 15px;
     text-align: center;
