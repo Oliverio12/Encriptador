@@ -1,23 +1,56 @@
-function Encriptar() {
-  let txtArea = document.querySelector(".input-encriptar").value;
-  let nuevoTxt = document.querySelector(".texto-mostrado");
-
-  Validaciones();
-}
-
-function Validaciones() {
+function encriptar() {
   let txtArea = document.querySelector(".input-encriptar").value;
   let nuevoTxt = document.querySelector(".texto-mostrado");
 
   if (txtArea.trim() === "") {
     mostrarNotificacion("Por favor, ingresa texto antes de encriptar.", "error");
   } else {
-    Ocultar();
-    Mostrar();
-    Ajuste();
+    ocultar();
+    mostrar();
+
+    txtArea = txtArea.replace(/e/g, "enter")
+                     .replace(/i/g, "imes")
+                     .replace(/a/g, "ai")
+                     .replace(/o/g, "ober")
+                     .replace(/u/g, "ufat");
+
     nuevoTxt.innerHTML = txtArea;
   }
 }
+
+
+  
+function desencriptar() {
+  let txtArea = document.querySelector(".texto-mostrado").innerHTML;
+  let nuevoTxt = document.querySelector(".texto-mostrado");
+
+  txtArea = txtArea.replace(/enter/g, "e")
+                   .replace(/imes/g, "i")
+                   .replace(/ai/g, "a")
+                   .replace(/ober/g, "o")
+                   .replace(/ufat/g, "u");
+
+  nuevoTxt.innerHTML = txtArea;
+}
+
+
+function copiarAlPortapapeles() {
+  let elemento = document.querySelector(".texto-mostrado");
+
+  let areaTemporal = document.createElement('textarea');
+  areaTemporal.value = elemento.textContent;
+
+  document.body.appendChild(areaTemporal);
+
+  areaTemporal.select();
+  document.execCommand('copy');
+
+  document.body.removeChild(areaTemporal);
+
+  mostrarNotificacion("Texto copiado al portapapeles.", "success");
+}
+
+
 
 function mostrarNotificacion(mensaje, tipo) {
   const notificationContainer = document.getElementById("notification-container");
@@ -37,23 +70,20 @@ function mostrarNotificacion(mensaje, tipo) {
 }
 
 
-function DisplayEstilos(clase, estilo) {
+function displayEstilos(clase, estilo) {
   document.querySelector(clase).style.display = estilo;
   return;
 }
 
-function Ocultar() {
-  DisplayEstilos(".imagen", "none");
-  DisplayEstilos(".mensaje-titulo", "none");
-  DisplayEstilos(".mensaje-subtitulo", "none");
-  return;
-}
-function Mostrar() {
-  DisplayEstilos(".texto-mostrado", "block");
-  DisplayEstilos(".btn3", "block");
+function ocultar() {
+  displayEstilos(".imagen", "none");
+  displayEstilos(".mensaje-titulo", "none");
+  displayEstilos(".mensaje-subtitulo", "none");
   return;
 }
 
-function Ajuste() {
-  document.querySelector(".texto-mostrado").style.height = "auto";
+function mostrar() {
+  displayEstilos(".texto-mostrado", "block");
+  displayEstilos(".btn3", "block");
+  return;
 }

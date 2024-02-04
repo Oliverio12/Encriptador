@@ -54,20 +54,19 @@ header {
   border: none;
   font-size: 25px;
 }
-  /* Personaliza el scrollbar en navegadores basados en WebKit */
-  .input-encriptar::-webkit-scrollbar {
-    width: 12px; /* Ancho del scrollbar */
-  }
+/* Personaliza el scrollbar en navegadores basados en WebKit */
+.input-encriptar::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
 
-  .input-encriptar::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color del scrollbar thumb */
-    border-radius: 6px; /* Bordes redondeados del scrollbar thumb */
-  }
+.input-encriptar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del scrollbar thumb */
+  border-radius: 6px; /* Bordes redondeados del scrollbar thumb */
+}
 
-  .input-encriptar::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Color de fondo del scrollbar track */
-  }
-
+.input-encriptar::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo del scrollbar track */
+}
 
 .input-encriptar::placeholder {
   color: #0a3871;
@@ -133,32 +132,32 @@ header {
   border-radius: 15px;
 }
 
-.texto-mostrado{
-  max-height: 80%;
+.texto-mostrado {
+  height: 500px;
+  width: 80%;
+  margin-left: 10px;
   border-radius: 15px;
   display: none;
   font-size: 20px;
   overflow-y: auto;
-
   padding: 25px;
   text-align: justify;
   color: #0a3871;
 }
 
-    /* Personaliza el scrollbar en navegadores basados en WebKit */
-    .texto-mostrado::-webkit-scrollbar {
-      width: 12px; 
-    }
+/* Personaliza el scrollbar en navegadores basados en WebKit */
+.texto-mostrado::-webkit-scrollbar {
+  width: 12px;
+}
 
-    .texto-mostrado::-webkit-scrollbar-thumb {
-      background-color: #888; 
-      border-radius: 6px; 
-    }
+.texto-mostrado::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
 
-    .texto-mostrado::-webkit-scrollbar-track {
-      background-color: #f1f1f1; 
-    }
-
+.texto-mostrado::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
 
 .imagen {
   display: flex;
@@ -212,7 +211,7 @@ header {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
-  background-color: #f8d7da;
+  background-color: #e2d7f8;
   color: #721c24;
   border-radius: 4px;
   transition: opacity 0.5s ease-in-out;
@@ -221,7 +220,6 @@ header {
 .notification.hide {
   opacity: 0;
 }
-
 
 /*Footer*/
 
@@ -234,11 +232,11 @@ footer {
 }
 
 /*Responsive para tablet 1024px*/
-@media screen and (max-width: 1025px){
-    .imagen{
-        width: 200px;
-        margin-left: 0px;
-    }
+@media screen and (max-width: 1025px) {
+  .imagen {
+    width: 200px;
+    margin-left: 0px;
+  }
 }
 
 /*Responsive para tablet 769px*/
@@ -254,7 +252,7 @@ footer {
   .encriptador {
     width: auto;
   }
-  .input-encriptar{
+  .input-encriptar {
     margin: 0;
   }
   .btn1 {
@@ -274,7 +272,7 @@ footer {
     margin-top: -10px;
     margin-left: 35px;
   }
-  .texto-mostrado{
+  .texto-mostrado {
     padding: 15px;
   }
   .btn3 {
@@ -284,7 +282,6 @@ footer {
     width: 300px;
     top: -10px;
     font-size: 17px;
-
   }
   #notification-container {
     top: 10px;
@@ -292,10 +289,10 @@ footer {
   }
 
   .mensaje-titulo,
-.mensaje-subtitulo{
-  top: 0;
-  padding: 15px;
-}
+  .mensaje-subtitulo {
+    top: 0;
+    padding: 15px;
+  }
   .imagen {
     display: none;
   }
@@ -404,8 +401,8 @@ footer {
     right: 5px;
     max-width: 100%;
   }
-  .btn3{
-    left:55px;
+  .btn3 {
+    left: 55px;
   }
   .mostrando-texto {
     height: auto;
@@ -464,7 +461,7 @@ footer {
   .notification {
     padding: 8px;
   }
-  .btn3{
+  .btn3 {
     left: 5px;
   }
   .mostrando-texto {
@@ -483,4 +480,3 @@ footer {
     width: auto;
   }
 }
-

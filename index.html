@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Img/logo.png" type="imagen">
+
     <title>Encriptador</title>
 </head>
 
@@ -31,8 +33,8 @@
             <section class="encriptador">
                 <textarea class="input-encriptar" cols="30" rows="15" placeholder="Ingrese el texto aqui"></textarea>
                 
-                <input onclick="Encriptar();" class="btn1" type="submit" value="Encriptar">
-                <input class="btn2" type="submit" value="Desencriptar">
+                <input onclick="encriptar();" class="btn1" type="submit" value="Encriptar">
+                <input onclick="desencriptar();" class="btn2" type="submit" value="Desencriptar">
             </section>
 
             <section class="mensajes">
@@ -45,7 +47,7 @@
                     
                     <p class="mensaje-titulo">Ningún mensaje fue encontrado</p>
                     <p class="mensaje-subtitulo">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <input class="btn3" type="submit" value="Copiar">
+                    <input onclick="copiarAlPortapapeles();" class="btn3" type="submit" value="Copiar">
                 </div>
             </section>
 
