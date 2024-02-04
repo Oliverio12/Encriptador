@@ -1,9 +1,9 @@
 function encriptar() {
   let txtArea = document.querySelector(".input-encriptar").value;
   let nuevoTxt = document.querySelector(".texto-mostrado");
-
-  if (txtArea.trim() === "") {
-    mostrarNotificacion("Por favor, ingresa texto antes de encriptar.", "error");
+  const upperLower = /^[a-z0-9 ]+$/;
+  if (txtArea.trim() === "" || !upperLower.test(txtArea)) {
+    mostrarNotificacion("Por favor, ingresa texto antes de encriptar o No ingrese Mayusculas o acentos", "error");
   } else {
     ocultar();
     mostrar();
