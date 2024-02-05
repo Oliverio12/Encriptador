@@ -281,19 +281,22 @@ footer {
   }
   .mostrando-texto {
     height: auto;
-    width: 700px;
+    width: 600px;
 
     margin-top: -10px;
-    margin-left: 35px;
+    margin-left: 80px;
   }
   .texto-mostrado {
-    height: auto;
-
+    
+    text-align: justify;
     padding: 15px;
+    margin-left: 45px;
+   
+    overflow-y: auto; 
   }
   .btn3 {
     position: relative;
-    left: 200px;
+    left: 150px;
     height: 40px;
     width: 300px;
     top: -10px;
@@ -369,6 +372,9 @@ footer {
     margin-left: 50px;
     padding: 15px;
     text-align: center;
+  }
+  .texto-mostrado{
+    margin-left: 20px;
   }
   .mensaje-titulo,
   .mensaje-subtitulo {
